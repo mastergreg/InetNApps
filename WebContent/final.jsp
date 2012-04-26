@@ -11,12 +11,16 @@
 	<%
 		Cookie cookies[] = request.getCookies();
 		String name, surname, selection, destination, price, order;
+		String date, people;
+		int cost = 0;
 		name = "";
 		surname = "";
 		selection = "";
 		destination = "";
 		price = "";
-		order = "";
+		date = "";
+		people = "";
+
 
 		for (int i = 0; i < cookies.length; ++i) {
 			if (cookies[i].getName().equals("name")) {
@@ -29,8 +33,10 @@
 				destination = cookies[i].getValue();
 			} else if (cookies[i].getName().equals("price")) {
 				price = cookies[i].getValue();
-			} else if (cookies[i].getName().equals("order")) {
-				order = cookies[i].getValue();
+			} else if (cookies[i].getName().equals("date")) {
+				date = cookies[i].getValue();
+			} else if (cookies[i].getName().equals("people")) {
+				people = cookies[i].getValue();
 			}
 		}
 	%>
@@ -54,9 +60,18 @@
 			<td><%=destination%></td>
 		</tr>
 		<tr>
-			<td>Παραγγελία:</td>
-			<td><%=order%></td>
+			<td>Ημερομηνία:</td>
+			<td><%=date%></td>
 		</tr>
+		<tr>
+			<td>Άτομα:</td>
+			<td><%=people %></td>
+		</tr>
+		<tr>
+			<td>Κόστος:</td>
+			<td><%=price %></td>
+		</tr>
+		
 
 	</table>
 

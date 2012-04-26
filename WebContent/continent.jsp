@@ -27,6 +27,8 @@
 		String name = request.getParameter("name");
 		String surname = request.getParameter("surname");
 		String selection = request.getParameter("selection");
+		String date = "";
+		String people = "";
 	
 		if (name == null || surname == null || selection == null) {
 			for( int i = 0 ; i < cookies.length ; ++i ) {
@@ -39,6 +41,13 @@
 				else if (selection == null && cookies[i].getName().equals("selection")) {
 					selection = cookies[i].getValue();
 				}
+				else if (cookies[i].getName().equals("date")) {
+					date = cookies[i].getValue();
+				}
+				else if (cookies[i].getName().equals("people")) {
+					people = cookies[i].getValue();
+				}
+					
 			}
 			
 		}
@@ -58,8 +67,13 @@
 	<form method="post" action="booking.jsp">
 		<table>
 			<tr>
-				<td>Παραγγελία</td>
-				<td><input name="order"></td>
+				<td>Ημερομηνία:</td>
+				<td><input name="date" value="<%=date %>"></td>
+			</tr>
+			<tr>
+				<td>Άτομα:</td>
+				<td><input name="people" value="<%=people %>"></td>
+
 			</tr>
 			<tr>
 				<td>Προορισμός:</td>
