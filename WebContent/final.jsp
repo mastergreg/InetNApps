@@ -25,6 +25,7 @@
 		for (int i = 0; i < cookies.length; ++i) {
 			if (cookies[i].getName().equals("name")) {
 				name = cookies[i].getValue();
+				cookies[i].setMaxAge(0);
 			} else if (cookies[i].getName().equals("surname")) {
 				surname = cookies[i].getValue();
 			} else if (cookies[i].getName().equals("selection")) {
@@ -38,8 +39,10 @@
 			} else if (cookies[i].getName().equals("people")) {
 				people = cookies[i].getValue();
 			}
+			cookies[i].setMaxAge(0);
 		}
 	%>
+	<h2>Η παραγγελία σας καταχωρήθηκε επιτυχώς</h2>
 	<table>
 		<tr>
 
@@ -74,6 +77,7 @@
 		
 
 	</table>
+	<form action="/work"><input type="submit" value="Επανεκκίνηση"></form>
 
 </body>
 </html>
