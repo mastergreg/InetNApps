@@ -67,16 +67,16 @@
 	<form method="post" action="booking.jsp">
 		<table>
 			<tr>
-				<td>Ημερομηνία:</td>
+				<td>Date:</td>
 				<td><input name="date" value="<%=date %>"></td>
 			</tr>
 			<tr>
-				<td>Άτομα:</td>
+				<td>People:</td>
 				<td><input name="people" value="<%=people %>"></td>
 
 			</tr>
 			<tr>
-				<td>Προορισμός:</td>
+				<td>Destination:</td>
 				<td><select name="destination">
 						<option selected="selected">
 							<%=re[0]%></option>
@@ -85,7 +85,7 @@
 				</select></td>
 			</tr>
 		</table>
-		<input type="submit" value="Αποστολή">
+		<input type="submit" value="Submit">
 	</form>
 </body>
 </html>

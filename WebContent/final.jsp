@@ -42,42 +42,42 @@
 			cookies[i].setMaxAge(0);
 		}
 	%>
-	<h2>Η παραγγελία σας καταχωρήθηκε επιτυχώς</h2>
+	<h2>Your order has been placed</h2>
 	<table>
 		<tr>
 
-			<td>Όνομα:</td>
+			<td>Name:</td>
 			<td><%=name%></td>
 		</tr>
 		<tr>
-			<td>Επώνυμο:</td>
+			<td>Surname:</td>
 			<td><%=surname%></td>
 		</tr>
 
 		<tr>
-			<td>Επιλογή:</td>
+			<td>Selection:</td>
 			<td><%=selection%></td>
 		</tr>
 		<tr>
-			<td>Προορισμός:</td>
+			<td>Destination:</td>
 			<td><%=destination%></td>
 		</tr>
 		<tr>
-			<td>Ημερομηνία:</td>
+			<td>Date:</td>
 			<td><%=date%></td>
 		</tr>
 		<tr>
-			<td>Άτομα:</td>
+			<td>People:</td>
 			<td><%=people %></td>
 		</tr>
 		<tr>
-			<td>Κόστος:</td>
+			<td>Price:</td>
 			<td><%=price %></td>
 		</tr>
 		
 
 	</table>
-	<form action="/work"><input type="submit" value="Επανεκκίνηση"></form>
+	<form action="/work"><input type="submit" value="Restart"></form>
 
 </body>
 </html>

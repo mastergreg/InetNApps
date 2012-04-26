@@ -1,0 +1,86 @@
+%{{{ preamble
+\documentclass[a4paper,9pt]{article}
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{1cm}{1cm}
+%\textwidth 6.0in \textheight = 664pt
+\usepackage{xltxtra}
+\usepackage{xunicode}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xgreek}
+\usepackage{fancyvrb}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{enumitem} 
+\usepackage{framed} 
+\usepackage{relsize}
+\usepackage{float} 
+\usepackage{pstricks}
+\usepackage{pst-node}
+\usepackage{pst-blur}
+\setmainfont[Mapping=tex-text]{FreeSerif}
+%}}}
+\begin{document}
+
+\def\thesection {\arabic{section}}
+
+\include{title/title}
+
+
+\section{Οθόνες}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{files/1.png}
+    \caption{Αρχική σελίδα}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{files/2.png}
+    \caption{Αρχική σελίδα (γεμάτη)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{files/3.png}
+    \caption{Δεύτερη σελίδα (γεμάτη)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{files/4.png}
+    \caption{Υπολογισμός κόστους και επιλογή χρήστη  (άκυρο)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{files/5.png}
+    \caption{Επιστροφή στην προηγούμενη σελίδα}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{files/6.png}
+    \caption{Νέο κόστος}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{files/7.png}
+    \caption{Τελική σελίδα}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{files/8.png}
+    \caption{Αρχική σελίδα (μετά από πάτημα του "Επανεκκίνηση)}
+\end{figure}
+
+\pagebreak
+
+
+\section{Κώδικας}
+\subsection{Αρχική σελίδα}
+\inputminted[linenos,fontsize=\scriptsize]{html}{files/index.html}
+\subsection{Δεύτερη σελίδα}
+\inputminted[linenos,fontsize=\scriptsize]{jsp}{files/continent.jsp}
+\subsection{Τρίτη σελίδα}
+\inputminted[linenos,fontsize=\scriptsize]{jsp}{files/booking.jsp}
+\subsection{Τέταρτη σελίδα}
+\inputminted[linenos,fontsize=\scriptsize]{jsp}{files/final.jsp}
+
+
+\end{document}
