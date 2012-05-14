@@ -33,9 +33,6 @@
 			<td><xsl:value-of select="mileage"/></td>
 			<td><xsl:value-of select="color"/></td>
 			<td><xsl:value-of select="price"/></td>
-			<td><xsl:value-of select="milage"/></td>
-		
-		
 	</tr>
 	</xsl:template>
 	
