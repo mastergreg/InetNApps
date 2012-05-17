@@ -1,0 +1,58 @@
+%{{{ preamble
+\documentclass[a4paper,9pt]{article}
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{1cm}{1cm}
+%\textwidth 6.0in \textheight = 664pt
+\usepackage{xltxtra}
+\usepackage{xunicode}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xgreek}
+\usepackage{fancyvrb}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{enumitem} 
+\usepackage{framed} 
+\usepackage{relsize}
+\usepackage{float} 
+\usepackage{pstricks}
+\usepackage{pst-node}
+\usepackage{pst-blur}
+\setmainfont[Mapping=tex-text]{FreeSerif}
+%}}}
+\begin{document}
+
+\def\thesection {Μέρος \alph{section}}
+\def\thesubsection {\roman{subsection}.}
+
+\include{title/title}
+
+
+\section*{Κώδικας άσκησης}
+\subsection{Κεντρική σελίδα}
+Εδώ μας δίνεται η δυνατότητα να επιλέξουμε το τι επιθυμούμε να δείξουμε καθώς
+και δύο στοιχεία μορφοποίησης. Στοίχιση και χρώμα παρασκηνίου. Αυτά στέλνονται
+με POST στο servlet XMLTransformer.
+\inputminted[linenos,fontsize=\scriptsize]{html}{files/index.html}
+\subsection{Servlet και web.xml}
+Το servlet παίρνει από το request τα δεδομένα που θέλουμε και ανοίγει τα
+αντίστοιχα αρχεία για να μας παρουσιάσει αυτά που ζητήσαμε.
+\inputminted[linenos,fontsize=\scriptsize]{java}{files/XMLTransformer.java}
+\inputminted[linenos,fontsize=\scriptsize]{xml}{files/web.xml}
+
+\subsection{XSL αρχείο template}
+Το template περιέχει την πληροφορία για τον τρόπο που θα περαστούν τα
+δεδομένα, που βρίσκονται στα XML αρχεία, στη σελίδα, για να παρουσιαστούν στο
+χρήστη.
+\inputminted[linenos,fontsize=\scriptsize]{xml}{files/present.xsl}
+
+\subsection{XML αρχεία που χρησιμοποιήθηκαν}
+Όπως φαίνεται από τα παρακάτω δεν έχει σημασία το όνομα των πεδίων στα αρχεία
+xml. Τα templates γράφτηκαν ώστε να λειτουργούν με τη μορφή και όχι με το
+περιεχόμενό τους.
+\inputminted[linenos,fontsize=\scriptsize]{xml}{files/Airplanes.xml}
+\inputminted[linenos,fontsize=\scriptsize]{xml}{files/Books.xml}
+\inputminted[linenos,fontsize=\scriptsize]{xml}{files/Cars.xml}
+
+
+\end{document}

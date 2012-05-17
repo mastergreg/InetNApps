@@ -1,0 +1,20 @@
+<?xml version="1.0"?> 
+<!-- REFERENCE TO THE STYLESHEET: --> 
+<!-- not present here, is programmatically arranged --> 
+<vehicles>
+	<vehicle year="1996" make="Land Rover" model="Discovery"> 
+		<mileage>36500</mileage> 
+		<color>black</color> 
+		<price>$22100</price>
+	</vehicle> 
+	<vehicle year="1998" make="Land Rover" model="Discovery">
+		<mileage>3550</mileage> 
+		<color>yellow</color> 
+		<price>$31995</price>
+	</vehicle> 
+	<vehicle year="1996" make="Chevrolet" model="Suburban 2500">
+		<mileage>49300</mileage> 
+		<color>green</color> 
+		<price>$25995</price>
+	</vehicle> 
+</vehicles>

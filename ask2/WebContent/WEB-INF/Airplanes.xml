@@ -1,0 +1,20 @@
+<?xml version="1.0"?> 
+<!-- REFERENCE TO THE STYLESHEET: --> 
+<!-- not present here, is programmatically arranged --> 
+<airplanes>
+    <airplane brand="Boeing" model="747" company="Aegean"> 
+        <capacity>220</capacity> 
+        <weight>81600</weight> 
+        <cost>$229100</cost>
+    </airplane> 
+    <airplane brand="AirBus" model="A380" company="EasyJet">
+        <capacity>850</capacity> 
+        <weight>391000</weight> 
+        <cost>$319095</cost>
+    </airplane> 
+    <airplane brand="Bombardier" model="Global 5000" company="Aegean">
+        <capacity>25</capacity> 
+        <weight>40700</weight> 
+        <cost>$259958</cost>
+    </airplane> 
+</airplanes>

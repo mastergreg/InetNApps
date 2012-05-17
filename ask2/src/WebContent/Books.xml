@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- REFERENCE TO THE STYLESHEET: -->
+<!-- not present here, is programmatically arranged -->
+<books>
+    <book title="The Dark Tower" writer="Stephen King" publisher="Harper Colling">
+        <pages>520</pages>
+        <version>40</version>
+        <RetailPrice>$25</RetailPrice>
+    </book>
+    <book title="The Alchemist" writer="Paolo Coelho" publisher="Penguin Group">
+        <pages>850</pages>
+        <version>12</version>
+        <RetailPrice>$35</RetailPrice>
+    </book>
+    <book title="Aksion Esti" writer="Odysseas Elytis" publisher="Psyxogios">
+        <pages>490</pages>
+        <version>47</version>
+        <RetailPrice>$20</RetailPrice>
+    </book>
+    <book title="Le petit prince" writer="Antoine de Saint-Exupéry" publisher="Gallimard">
+        <pages>390</pages>
+        <version>27</version>
+        <RetailPrice>$40</RetailPrice>
+    </book>
+</books>

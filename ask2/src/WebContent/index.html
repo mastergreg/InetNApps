@@ -1,23 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCtype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>test</title>
+<title>Product Selection</title>
 </head>
+
 <body>
-
-
-
-
-<FORM ACTION='http://localhost:8080/ask2/XMLTransformer' METHOD='POST'>
-<STRONG>Please select:<br> </STRONG><PRE>
-<INPUT TYPE='radio' NAME='color' VALUE='red'>RED<BR>
-<INPUT TYPE='radio' NAME='color' VALUE='green'>GREEN<BR>
-<INPUT TYPE='radio' NAME='color' VALUE='blue' CHECKED>BLUE<BR>
-</PRE><INPUT TYPE='submit' VALUE='OK'>
-</FORM>
-
-
-
+	<form ACTION="http://localhost:8080/ask2/XMLTransformer" method="POST">
+		<div>
+			<div>
+				<h3>
+					Please select a product:
+					</h2>
+			</div>
+			<div>
+				<input type='radio' name='product' value="/WEB-INF/Airplanes.xml"
+					checked> Airplanes
+			</div>
+			<div>
+				<input type='radio' name='product' value="/WEB-INF/Books.xml">
+				Books
+			</div>
+			<div>
+				<input type='radio' name='product' value="/WEB-INF/Cars.xml">
+				Cars
+			</div>
+			<div>
+				<br />
+			</div>
+			<div>
+				<h3>
+					Please select color of header:
+					</h2>
+			</div>
+			<div>
+				<input type='radio' name='color' value="red" checked> Red
+			</div>
+			<div>
+				<input type='radio' name='color' value="green"> Green
+			</div>
+			<div>
+				<input type='radio' name='color' value="blue"> Blue
+			</div>
+			<div>
+				<h3>
+					Please select font size:
+					</h2>
+			</div>
+			<div>
+				<input type='radio' name='align' value="left" checked> Left
+			</div>
+			<div>
+				<input type='radio' name='align' value="center"> Center
+			</div>
+			<div>
+				<input type='radio' name='align' value="right"> Right
+			</div>
+		</div>
+		<input type='submit' value='OK'>
+	</form>
 </body>
 </html>
